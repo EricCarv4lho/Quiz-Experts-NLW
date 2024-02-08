@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*, :root{
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+  font-family: "Inter", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+}
+
+
+
+body{
+background-color: #0F172A ;
+
+ 
+  
+}
+
+main{
+
+  padding: 20px;
+  
+  max-width: 640px;
+  margin:0 auto;
+  
+  
+}
+
+  
+  
+#onepieceimg{
+  max-width:800px;
+    max-height:750px;
+    width: auto;
+    height: auto;
+
+
+}
+
+.imgop{
+  display: flex;
+  justify-content: center;
+  
+}
+
+header{
+  margin-top: 64px;
+  padding-bottom: 24px;
+  border-bottom: #475569  solid 1px;
+;
+}
+
+header h1 {
+  color: #f1f5f9;
+  
+  font-size: 30px;
+}
+.quiz-item{
+  margin-top:24px ;
+  border: solid #475569 1px;
+  border-radius: 6px;
+  overflow: hidden;
+  
+  
+}
+
+.quiz-item h3{
+  color: #e2e8f0;
+  padding: 16px 28px;
+  display: flex;
+  gap: 12px;
+  background-color: #1e293b;
+}
+
+.quiz-item h3:before{
+  counter-increment: quiz-item;
+  content: counter(quiz-item);
+  background-color: #475569;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.quiz-item dl {
+  display: grid;
+  color: white;
+  
+  gap: 8px;
+  padding: 20px 24px;
+  ;
+}
+
+.quiz-item dl dt{
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0;
+ display: flex;
+ gap: 8px;
+ align-items: center;
+ color: #e2e8f0;
+ 
+}
+
+#quiz{counter-reset: quiz-item;
+
+
+}
+
+input{
+  all: unset;
+  border:1px solid black ;
+  width: 16px;
+  height: 16px;
+  
+  border-radius: 50%;
+   ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+}
+
+input:checked{
+  border: 1px solid rgb(160, 226, 60);
+}
+
+input:checked::before{
+  background-color:rgb(160, 226, 60);
+  border-radius: 50%;
+  content: "";
+  width: 10px;
+  height: 10px;
+
+}
+
+
+
+#acertos{
+  background:rgb(160, 226, 60);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: black;
+  padding: 12px;
+  font-weight: 800;
+  
+}
